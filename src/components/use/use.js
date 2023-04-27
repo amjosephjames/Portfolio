@@ -22,11 +22,7 @@ const Container = styled.div`
   /* @media (max-width: 768px) {
     margin-top: 70px;
   } */
-  @media (max-width: 900px) {
-    /* margin-top: 100px; */
-    margin-top: 800px;
-    /* background-color: yellow; */
-  }
+
   @media (max-width: 1024px) {
     margin-top: 100px;
   }
@@ -40,9 +36,6 @@ const Container = styled.div`
   }
   @media (max-width: 320px) {
     /* margin-top: 200px; */
-  }
-  @media (max-width: 768px) {
-    margin-top: 350px;
   }
 `;
 const Wrapper = styled.div`

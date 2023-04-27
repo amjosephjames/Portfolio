@@ -3,8 +3,6 @@ import styled from "styled-components";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Header = ({ bg }) => {
-
-
   return (
     <Container bg={bg}>
       <Wrapper>
@@ -15,40 +13,39 @@ const Header = ({ bg }) => {
           <Span>Contact</Span>
           <Button>Download CV</Button>
         </Navigator>
-        </Wrapper>
-        <Icons>
-          <AiOutlineMenu
-            color="blue"
-            id="Menu"
-            onClick={() => {
-              document.getElementById("sidebar").style.width = "260px";
-              document.getElementById("Menu").style.display = "none";
-              document.getElementById("Close").style.display = "block";
-            }}
-          />
-          <AiOutlineClose
-            fontSize="25px"
-            color="blue"
-            style={{
-              display: "none",
-            }}
-            id="Close"
-            onClick={() => {
-              document.getElementById("sidebar").style.width = "0";
-              document.getElementById("Menu").style.display = "block";
-              document.getElementById("Close").style.display = "none";
-            }}
-          />
-        </Icons>
-        <Sidebar id="sidebar">
-          <Hold>
-            <Span>About</Span>
-            <Span>Projects</Span>
-            <Span>Contact</Span>
-            <Button>Download CV</Button>
-          </Hold>
-        </Sidebar>
-      
+      </Wrapper>
+      <Icons>
+        <AiOutlineMenu
+          color="blue"
+          id="Menu"
+          onClick={() => {
+            document.getElementById("sidebar").style.width = "260px";
+            document.getElementById("Menu").style.display = "none";
+            document.getElementById("Close").style.display = "block";
+          }}
+        />
+        <AiOutlineClose
+          fontSize="25px"
+          color="blue"
+          style={{
+            display: "none",
+          }}
+          id="Close"
+          onClick={() => {
+            document.getElementById("sidebar").style.width = "0";
+            document.getElementById("Menu").style.display = "block";
+            document.getElementById("Close").style.display = "none";
+          }}
+        />
+      </Icons>
+      <Sidebar id="sidebar">
+        <Hold>
+          <Span>About</Span>
+          <Span>Projects</Span>
+          <Span>Contact</Span>
+          <Button>Download CV</Button>
+        </Hold>
+      </Sidebar>
     </Container>
   );
 };
@@ -90,14 +87,6 @@ const Container = styled.div`
     position: fixed;
     height: 15vh;
   }
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    align-items: center;
-    width: 100%;
-    height: 15vh;
-  }
 `;
 const Wrapper = styled.div`
   width: 90%;
@@ -105,14 +94,6 @@ const Wrapper = styled.div`
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  @media (max-width: 768px) {
-    /* display: none; */
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
 
   @media (max-width: 320px) {
     /* display: none; */
@@ -140,15 +121,6 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
   }
-
-  @media (max-width: 900px) {
-    /* display: none; */
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
 `;
 const Logo = styled.div`
   color: blue;
@@ -169,12 +141,7 @@ const Navigator = styled.div`
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  @media (max-width: 768px) {
-    display: none;
-  }
-  @media (max-width: 900px) {
-    display: none;
-  }
+
   @media (max-width: 500px) {
     display: none;
   }
@@ -203,7 +170,7 @@ const Icons = styled.div`
   font-weight: bolder;
   display: none;
   cursor: pointer;
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
     display: block;
   }
 `;
@@ -232,7 +199,7 @@ const Sidebar = styled.div`
   overflow: hidden;
   top: 0;
   left: 0;
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -26,15 +26,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background: inherit;
-  @media (max-width: 768px) {
-    margin-top: 1150px;
-    /* height: 40vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    background: inherit;
-  }
   @media (max-width: 500px) {
     margin-top: 950px;
     /* height: 40vh; */
@@ -73,9 +65,6 @@ const Wrapper = styled.div`
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  @media (max-width: 768px) {
-    width: 90%;
-  }
 `;
 const Logo = styled.div`
   color: blue;

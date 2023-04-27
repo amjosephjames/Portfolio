@@ -29,12 +29,4 @@ const Container = styled.div`
   justify-content: space-between;
   flex-direction: column;
   background-color: #020c1b;
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: #020c1b;
-  }
 `;

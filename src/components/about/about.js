@@ -60,12 +60,6 @@ const Container = styled.div`
   @media (max-width: 400px) {
     margin-top: 400px;
   }
-  @media (max-width: 768px) {
-    margin-top: 350px;
-  }
-  @media (max-width: 900px) {
-    margin-top: 350px;
-  }
 `;
 const Wrapper = styled.div`
   width: 80%;
@@ -73,15 +67,6 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
-  @media (max-width: 768px) {
-    display: flex;
-    width: 90%;
-    height: 1000px;
-
-    justify-content: space-between;
-    flex-direction: column;
-  }
 
   @media (max-width: 320px) {
     display: flex;
@@ -110,13 +95,6 @@ const Left = styled.div`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("Joseph.JPG");
-  @media (max-width: 768px) {
-    width: 100%;
-    /* height: 500px; */
-    /* padding-bottom: 100px; */
-    height: 50%;
-  }
 
   @media (max-width: 320px) {
     height: 400px;
@@ -132,10 +110,6 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
   align-self: center;
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 50%;
-  }
 
   @media (max-width: 320px) {
     width: 100%;

@@ -81,10 +81,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background: inherit;
-  @media (max-width: 768px) {
-    margin-top: 600px;
-    height: 200vh;
-  }
 
   @media (max-width: 400px) {
     /* margin-top: 1400px; */
@@ -101,14 +97,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  @media (mx-width: 768px) {
-    width: 80%;
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-  }
+
   @media (mx-width: 500px) {
     width: 80%;
     height: 90%;
@@ -159,14 +148,7 @@ const Holder = styled.div`
   flex-direction: row;
   /* background-color: white; */
   // flex-wrap: wrap;
-  @media (max-width: 768px) {
-    /* justify-content: center; */
-    flex-direction: column;
-    justify-content: space-between;
-    display: flex;
-    height: 90%;
-    align-items: center;
-  }
+
   @media (max-width: 1024px) {
     /* justify-content: center; */
   }
@@ -180,9 +162,6 @@ const Card = styled.div`
   flex-direction: column;
   border: 1px solid blue;
   border-radius: 5px;
-  @media (max-width: 768px) {
-    margin-bottom: 10px;
-  }
 `;
 const Image = styled.img`
   width: 100%;
